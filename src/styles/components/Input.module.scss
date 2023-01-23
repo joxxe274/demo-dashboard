@@ -1,0 +1,39 @@
+@import '../vars';
+
+.input-container {
+  width: 100%;
+  position: relative;
+  margin: 30px 0;
+
+  .label {
+    position: absolute;
+    top: 18px;
+    left: 20px;
+    font-size: $font-size-small;
+    color: $font-color-secondary;
+    transform: translateY(-50%);
+    transition: all 0.2s ease-in-out;
+    z-index: 0;
+
+    &--active {
+      transform: translate(-15%, -210%);
+      font-size: $font-size-content;
+    }
+  }
+
+  input {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 2px solid $bg-color-green;
+    outline: none;
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+
+    &:focus {
+      // border: 2px solid $color-purple;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    }
+  }
+}

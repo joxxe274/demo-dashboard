@@ -1,0 +1,67 @@
+
+@import './vars';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.flex-center-center {
+  @include flex(column, center, center);
+}
+
+.flex-end-center {
+  @include flex(column, flex-end, center);
+}
+
+.flex-start-center {
+  @include flex(column, flex-start, center);
+}
+
+.flex-center-start {
+  @include flex(column, center, flex-start);
+}
+
+.flex-center-end {
+  @include flex(column, center, flex-end);
+}
+
+.flex-start-start {
+  @include flex(column, flex-start, flex-start);
+}
+
+.flex-end-end {
+  @include flex(column, flex-end, flex-end);
+}
+
+.full-viewport {
+  height: 100vh;
+  width: 100vw;
+}
+
+.font-size-title {
+  @include font-size-title;
+}
+
+.font-size-subtitle {
+  @include font-size-subtitle;
+}
+
+.font-size-content {
+  @include font-size-content;
+}
+
+.bg-primary {
+  background-color: $bg-color-primary;
+}
+
+.bg-secondary {
+  background-color: $bg-color-secondary;
+}
+
+.container {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
